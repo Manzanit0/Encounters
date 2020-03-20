@@ -132,4 +132,7 @@
       <Name>Encounters</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hamburger_menu.png" />
+  </ItemGroup>
 </Project>

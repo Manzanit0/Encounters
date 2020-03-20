@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using Encounters.Pages;
 using Xamarin.Forms;
 
 namespace Encounters
@@ -12,7 +13,7 @@ namespace Encounters
         {
             InitializeComponent();
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
-            MainPage = new NavigationPage(new NotesPage());
+            MainPage = new MainMenu();
         }
 
         protected override void OnStart()
