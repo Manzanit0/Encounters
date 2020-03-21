@@ -34,7 +34,7 @@ namespace Encounters.Pages
             {
                 if (item.Title.Equals("Liturgy"))
                 {
-                    Detail = new NavigationPage(new NotesPage());
+                    Detail = new NavigationPage(new LiturgyEntryPage());
                 }
                 if (item.Title.Equals("Mass"))
                 {
