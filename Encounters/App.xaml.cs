@@ -12,6 +12,9 @@ namespace Encounters
         public App()
         {
             InitializeComponent();
+#if DEBUG
+            HotReloader.Current.Run(this); 
+#endif
             FolderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData));
             MainPage = new MainMenu();
         }
