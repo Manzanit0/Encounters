@@ -5,7 +5,6 @@ using Xamarin.Forms.Xaml;
 
 namespace Encounters.Pages
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainMenu : MasterDetailPage
     {
         public List<MainMenuItem> MainMenuItems { get; set; }
@@ -18,8 +17,9 @@ namespace Encounters.Pages
             // Build the Menu
             MainMenuItems = new List<MainMenuItem>()
             {
-                new MainMenuItem {Title = "Liturgy", Icon = "menu_stock.png", TargetType = typeof(NotesPage)},
-                new MainMenuItem {Title = "Thoughts", Icon = "menu_inbox.png", TargetType = typeof(NotesPage)},
+                new MainMenuItem {Title = "Liturgy", Icon = "bible.png", TargetType = typeof(NotesPage)},
+                new MainMenuItem {Title = "Mass", Icon = "church.png", TargetType = typeof(NotesPage)},
+                new MainMenuItem {Title = "Thoughts", Icon = "notebook.png", TargetType = typeof(NotesPage)},
             };
 
             // Set the default page, this is the "home" page.
@@ -34,6 +34,10 @@ namespace Encounters.Pages
             if (e.SelectedItem is MainMenuItem item)
             {
                 if (item.Title.Equals("Liturgy"))
+                {
+                    Detail = new NavigationPage(new NotesPage());
+                }
+                if (item.Title.Equals("Mass"))
                 {
                     Detail = new NavigationPage(new NotesPage());
                 }
