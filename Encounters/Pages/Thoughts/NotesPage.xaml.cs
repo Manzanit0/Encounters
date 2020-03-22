@@ -5,7 +5,7 @@ using System.Linq;
 using Encounters.Models;
 using Xamarin.Forms;
 
-namespace Encounters.Pages
+namespace Encounters.Pages.Thoughts
 {
     public partial class NotesPage : ContentPage
     {

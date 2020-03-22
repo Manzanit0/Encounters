@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Encounters.Models;
 using Xamarin.Forms;
 
-namespace Encounters.Pages
+namespace Encounters.Pages.Liturgy
 {
     public partial class LiturgyEntryPage : ContentPage
     {

@@ -1,5 +1,7 @@
-using System;
 using System.Collections.Generic;
+using Encounters.Models;
+using Encounters.Pages.Liturgy;
+using Encounters.Pages.Thoughts;
 using Xamarin.Forms;
 
 namespace Encounters.Pages
@@ -16,8 +18,8 @@ namespace Encounters.Pages
             // Build the Menu
             MainMenuItems = new List<MainMenuItem>()
             {
-                new MainMenuItem {Title = "Liturgy", Icon = IconFont.BookCross, TargetType = typeof(NotesPage)},
-                new MainMenuItem {Title = "Mass", Icon = IconFont.Church, TargetType = typeof(NotesPage)},
+                new MainMenuItem {Title = "Liturgy", Icon = IconFont.BookCross, TargetType = typeof(LiturgyEntryPage)},
+                new MainMenuItem {Title = "Mass", Icon = IconFont.Church, TargetType = typeof(LiturgyEntryPage)},
                 new MainMenuItem {Title = "Thoughts", Icon = IconFont.LeadPencil, TargetType = typeof(NotesPage)},
             };
 
@@ -50,19 +52,5 @@ namespace Encounters.Pages
                 IsPresented = false;
             }
         }
-    }
-
-    public class MainMenuItem
-    {
-        public string Title { get; set; }
-        public string Icon { get; set; }
-        public Type TargetType { get; set; }
-    }
-
-    internal static class IconFont
-    {
-        public const string BookCross = "\U000f00a2";
-        public const string Church = "\U000f0144";
-        public const string LeadPencil = "\U000f064f";
     }
 }
