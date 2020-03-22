@@ -6,6 +6,7 @@
     <ContentPage.Content>
         <ListView x:Name="ListView"
                   Margin="{StaticResource PageMargin}"
+                  BackgroundColor="{StaticResource GhostColour}"
                   ItemSelected="OnListViewItemSelected">
             <ListView.ItemTemplate>
                 <DataTemplate>
