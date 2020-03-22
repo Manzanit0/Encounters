@@ -16,9 +16,9 @@ namespace Encounters.Pages
             // Build the Menu
             MainMenuItems = new List<MainMenuItem>()
             {
-                new MainMenuItem {Title = "Liturgy", Icon = "bible.png", TargetType = typeof(NotesPage)},
-                new MainMenuItem {Title = "Mass", Icon = "church.png", TargetType = typeof(NotesPage)},
-                new MainMenuItem {Title = "Thoughts", Icon = "notebook.png", TargetType = typeof(NotesPage)},
+                new MainMenuItem {Title = "Liturgy", Icon = IconFont.BookCross, TargetType = typeof(NotesPage)},
+                new MainMenuItem {Title = "Mass", Icon = IconFont.Church, TargetType = typeof(NotesPage)},
+                new MainMenuItem {Title = "Thoughts", Icon = IconFont.LeadPencil, TargetType = typeof(NotesPage)},
             };
 
             // Set the default page, this is the "home" page.
@@ -36,6 +36,7 @@ namespace Encounters.Pages
                 {
                     Detail = new NavigationPage(new LiturgyEntryPage());
                 }
+
                 if (item.Title.Equals("Mass"))
                 {
                     Detail = new NavigationPage(new NotesPage());
@@ -56,5 +57,12 @@ namespace Encounters.Pages
         public string Title { get; set; }
         public string Icon { get; set; }
         public Type TargetType { get; set; }
+    }
+
+    internal static class IconFont
+    {
+        public const string BookCross = "\U000f00a2";
+        public const string Church = "\U000f0144";
+        public const string LeadPencil = "\U000f064f";
     }
 }
