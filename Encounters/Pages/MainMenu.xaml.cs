@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Encounters.Models;
 using Encounters.Pages.Liturgy;
+using Encounters.Pages.Locations;
 using Encounters.Pages.Thoughts;
 using Xamarin.Forms;
 
@@ -19,12 +20,12 @@ namespace Encounters.Pages
             MainMenuItems = new List<MainMenuItem>()
             {
                 new MainMenuItem {Title = "Liturgy", Icon = IconFont.BookCross, TargetType = typeof(LiturgyEntryPage)},
-                new MainMenuItem {Title = "Mass", Icon = IconFont.Church, TargetType = typeof(LiturgyEntryPage)},
+                new MainMenuItem {Title = "Nearby Churches", Icon = IconFont.MapMarkerRadius, TargetType = typeof(NearbyChurchesPage)},
                 new MainMenuItem {Title = "Thoughts", Icon = IconFont.LeadPencil, TargetType = typeof(NotesPage)},
             };
 
             // Set the default page, this is the "home" page.
-            Detail = new NavigationPage(new NotesPage());
+            Detail = new NavigationPage(new NearbyChurchesPage());
 
             InitializeComponent();
         }
@@ -39,9 +40,9 @@ namespace Encounters.Pages
                     Detail = new NavigationPage(new LiturgyEntryPage());
                 }
 
-                if (item.Title.Equals("Mass"))
+                if (item.Title.Equals("Nearby Churches"))
                 {
-                    Detail = new NavigationPage(new NotesPage());
+                    Detail = new NavigationPage(new NearbyChurchesPage());
                 }
                 else if (item.Title.Equals("Thoughts"))
                 {

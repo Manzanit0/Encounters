@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Encounters.Pages.Locations.NearbyChurchesPage">
+    <ContentPage.Content>
+        <ListView x:Name="NearbyChurches"
+                  RowHeight="80"
+                  Margin="{StaticResource PageMargin}"
+                  BackgroundColor="{StaticResource GhostColour}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Spacing="10">
+                            <Label Text="&#xF034E;"
+                                   WidthRequest="40"
+                                   HeightRequest="40"
+                                   FontFamily="{StaticResource IconFont}"
+                                   VerticalOptions="CenterAndExpand"
+                                   FontSize="36" />
+                            <StackLayout VerticalOptions="Center" Orientation="Vertical" Spacing="3">
+                                <Label Text="{Binding Name}"
+                                       FontSize="Medium"
+                                       VerticalOptions="Start"
+                                       TextColor="Black" />
+                                <Label Text="{Binding Address}"
+                                       FontSize="Micro"
+                                       VerticalOptions="Start"
+                                       TextColor="Black" />
+                                <Label Text="{Binding MetersAwayView}"
+                                       FontSize="Micro"
+                                       VerticalOptions="Start"
+                                       TextColor="Gray" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
