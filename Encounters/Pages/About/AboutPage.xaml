@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Encounters.Pages.About.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="This application has been developed using Xamarin Forms by Manzanit0."
+                   Padding="16, 16, 16, 16"
+                   VerticalOptions="Start"
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
