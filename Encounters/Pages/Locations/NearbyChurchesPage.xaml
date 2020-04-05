@@ -20,16 +20,15 @@
                                    FontSize="36" />
                             <StackLayout VerticalOptions="Center" Orientation="Vertical" Spacing="3">
                                 <Label Text="{Binding Name}"
-                                       FontSize="Small"
                                        VerticalOptions="Start"
                                        TextColor="Black" />
                                 <Label Text="{Binding Address}"
-                                       FontSize="Micro"
+                                       FontSize="12"
                                        VerticalOptions="Start"
                                        FontAttributes="Italic"
                                        TextColor="Black" />
                                 <Label Text="{Binding MetersAwayView}"
-                                       FontSize="Micro"
+                                       FontSize="12"
                                        VerticalOptions="Start"
                                        TextColor="Gray" />
                             </StackLayout>
