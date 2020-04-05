@@ -38,5 +38,7 @@
 	<array>
 		<string>materialdesignicons-webfont.ttf</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Find nearby churches</string>
 </dict>
 </plist>
