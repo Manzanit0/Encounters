@@ -1,6 +1,6 @@
 using System;
 
-namespace Encounters.Models
+namespace Encounters.Pages.Thoughts
 {
     public class Note
     {

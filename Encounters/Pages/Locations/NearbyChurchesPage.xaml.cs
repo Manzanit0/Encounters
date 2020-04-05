@@ -25,7 +25,7 @@ namespace Encounters.Pages.Locations
             }
             catch (Exception e)
             {
-                await DisplayAlert ("Alert", e.Message + " // " + e.InnerException.Message, "OK");
+                await DisplayAlert ("Alert", e.Message + " // " + e.InnerException?.Message, "OK");
             }
         }
     }

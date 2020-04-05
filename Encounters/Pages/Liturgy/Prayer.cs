@@ -1,4 +1,4 @@
-namespace Encounters.Models
+namespace Encounters.Pages.Liturgy
 {
     public class Prayer
     {
