@@ -5,36 +5,28 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Encounters.Pages.MainMenu">
     <MasterDetailPage.Master>
-        <ContentPage Icon="hamburger_menu.png" Title="Menu" BackgroundColor="{StaticResource NotSoLightBlueColour}">
-            <Grid VerticalOptions="FillAndExpand" RowSpacing="50">
+        <ContentPage Icon="hamburger_menu.png" Title="Menu" BackgroundColor="LightGray">
+            <Grid VerticalOptions="FillAndExpand"  RowSpacing="50">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="80" />
+                    <RowDefinition Height="56" />
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
-                <Grid Grid.Row="0" RowSpacing="-10" Padding="30, 30, 0, -30">
+                <Grid Grid.Row="0" Padding="16, 30, 0, -30">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="50" />
-                        <RowDefinition Height="*" />
+                        <RowDefinition Height="36" />
+                        <RowDefinition Height="20" />
                     </Grid.RowDefinitions>
-                    <StackLayout Grid.Row="0" Orientation="Horizontal">
-                        <Label Text="&#xF07F6;"
-                               WidthRequest="40"
-                               HeightRequest="40"
-                               FontFamily="{StaticResource IconFont}"
-                               FontSize="36"
-                               VerticalOptions="Center" />
-                        <Label Text="Encounters"
-                               TextColor="{StaticResource GhostColour}"
-                               FontSize="24"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Start" />
-                    </StackLayout>
+                    <Label Grid.Row="0"
+			               Text="Encounters"
+		                   TextColor="Black"
+		                   FontSize="20"
+		                   VerticalOptions="Center"
+		                   HorizontalOptions="Start" />
                     <Label Grid.Row="1"
                            Text="Your daily dose of prayer in a pocket!"
-                           TextColor="{StaticResource GhostColour}"
-                           FontSize="12"
-                           VerticalOptions="Start"
-                           Padding="45, 0, 0, 0"
+                           TextColor="DarkSlateGray"
+                           FontSize="14"
+                           VerticalOptions="Center"
                            HorizontalOptions="Start" />
                 </Grid>
                 <ListView Grid.Row="1"
@@ -43,23 +35,23 @@
                           ItemSelected="MainMenuItem_Selected"
                           VerticalOptions="FillAndExpand"
                           SeparatorVisibility="None"
-                          RowHeight="70"
+                          RowHeight="48"
                           BackgroundColor="{StaticResource GhostColour}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <StackLayout VerticalOptions="FillAndExpand"
                                              Orientation="Horizontal"
-                                             Padding="20,10,0,10"
+                                             Padding="16,10,0,10"
                                              Spacing="20">
                                     <Label Text="{Binding Icon}"
-                                           WidthRequest="40"
-                                           HeightRequest="40"
                                            FontFamily="{StaticResource IconFont}"
-                                           FontSize="36"
+                                           FontSize="24"
+                                           TextColor="SlateGray"
                                            VerticalOptions="Center" />
                                     <Label Text="{Binding Title}"
-                                           FontSize="Medium"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
                                            VerticalOptions="Center"
                                            TextColor="Black" />
                                 </StackLayout>
