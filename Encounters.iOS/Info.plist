@@ -37,6 +37,11 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>materialdesignicons-webfont.ttf</string>
+		<string>BalooThambi2-Regular.ttf</string>
+		<string>BalooThambi2-Medium.ttf</string>
+		<string>BalooThambi2-SemiBold.ttf</string>
+		<string>BalooThambi2-Bold.ttf</string>
+		<string>BalooThambi2-ExtraBold.ttf</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Find nearby churches</string>

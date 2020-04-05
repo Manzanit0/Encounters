@@ -40,7 +40,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -96,6 +95,11 @@
     <BundleResource Include="Resources\drawable\hamburger_menu.png" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\BalooThambi2-Bold.ttf" />
+    <AndroidAsset Include="Assets\BalooThambi2-ExtraBold.ttf" />
+    <AndroidAsset Include="Assets\BalooThambi2-Medium.ttf" />
+    <AndroidAsset Include="Assets\BalooThambi2-Regular.ttf" />
+    <AndroidAsset Include="Assets\BalooThambi2-SemiBold.ttf" />
     <AndroidAsset Include="Assets\materialdesignicons-webfont.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

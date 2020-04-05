@@ -51,7 +51,7 @@
                                            VerticalOptions="Center" />
                                     <Label Text="{Binding Title}"
                                            FontSize="14"
-                                           FontAttributes="Bold"
+                                           FontFamily="{StaticResource MediumFont}"
                                            VerticalOptions="Center"
                                            TextColor="Black" />
                                 </StackLayout>

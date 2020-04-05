@@ -8,11 +8,32 @@
         <ResourceDictionary>
             <Thickness x:Key="PageMargin">20</Thickness>
 
+            <!-- Font -->
+            <OnPlatform x:TypeArguments="x:String" x:Key="RegularFont">
+                <On Platform="Android" Value="BalooThambi2-Regular.ttf#Baloo Thambi 2" />
+                <On Platform="iOS" Value="BalooThambi2-Regular" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="MediumFont">
+                <On Platform="Android" Value="BalooThambi2-Medium.ttf#Baloo Thambi 2" />
+                <On Platform="iOS" Value="BalooThambi2-Medium" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="SemiBoldFont">
+                <On Platform="Android" Value="BalooThambi2-SemiBold.ttf#Baloo Thambi 2" />
+                <On Platform="iOS" Value="BalooThambi2-SemiBold" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont">
+                <On Platform="Android" Value="BalooThambi2-Bold.ttf#Baloo Thambi 2" />
+                <On Platform="iOS" Value="BalooThambi2-Bold" />
+            </OnPlatform>
+            <OnPlatform x:TypeArguments="x:String" x:Key="ExtraBoldFont">
+                <On Platform="Android" Value="BalooThambi2-ExtraBold.ttf#Baloo Thambi 2" />
+                <On Platform="iOS" Value="BalooThambi2-ExtraBold" />
+            </OnPlatform>
+            
             <!-- Icons -->
             <OnPlatform x:TypeArguments="x:String" x:Key="IconFont">
                 <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
                 <On Platform="iOS" Value="Material Design Icons" />
-                <On Platform="UWP" Value="/Assets/materialdesignicons-webfont.ttf#Material Design Icons" />
             </OnPlatform>
 
             <!-- Colors -->
@@ -33,6 +54,9 @@
 
             <Style TargetType="{x:Type ContentPage}" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="{StaticResource GhostColour}" />
+            </Style>
+            <Style TargetType="{x:Type Label}" ApplyToDerivedTypes="True">
+                <Setter Property="FontFamily" Value="{StaticResource RegularFont}" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
