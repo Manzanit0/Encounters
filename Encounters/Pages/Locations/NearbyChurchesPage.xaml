@@ -7,6 +7,7 @@
         <ListView x:Name="NearbyChurches"
                   RowHeight="80"
                   Margin="{StaticResource PageMargin}"
+                   ItemSelected="OnChurchSelected"
                   BackgroundColor="{StaticResource GhostColour}">
             <ListView.ItemTemplate>
                 <DataTemplate>

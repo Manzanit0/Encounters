@@ -45,5 +45,9 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Find nearby churches</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>comgooglemaps</string>
+	</array>
 </dict>
 </plist>
