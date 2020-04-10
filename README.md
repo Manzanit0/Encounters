@@ -1,5 +1,4 @@
 # Encounters
 
-Proof of concept application with Xamarin Forms - it's purpose is
-mainly to allow folks to access their daily prayers and type down
-some thoughts.
+Proof of concept application with Xamarin Forms whose purpose is mainly to
+provide access to nearby churches and some access to liturgical texts.
