@@ -1,4 +1,4 @@
-namespace Encounters.Churches
+namespace Encounters.Pages.Locations
 {
     public class Church
     {

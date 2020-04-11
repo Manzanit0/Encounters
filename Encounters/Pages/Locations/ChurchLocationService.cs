@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Xamarin.Essentials;
 
-namespace Encounters.Churches
+namespace Encounters.Pages.Locations
 {
     public class ChurchLocationService
     {
@@ -54,6 +54,8 @@ namespace Encounters.Churches
             Name = x.PointOfInterest.Name,
             Address = x.Address.FreeformAddress,
             MetersAway = (int) x.MetersAway,
+            Latitude = x.Position.Latitude,
+            Longitude = x.Position.Longitude,
         };
     }
 }

@@ -1,6 +1,5 @@
 using System;
 using System.Collections.ObjectModel;
-using Encounters.Churches;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 

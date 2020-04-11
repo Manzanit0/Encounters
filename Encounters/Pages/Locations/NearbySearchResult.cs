@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
-namespace Encounters.Churches
+
+namespace Encounters.Pages.Locations
 {
     public class NearbySearchResult
     {
