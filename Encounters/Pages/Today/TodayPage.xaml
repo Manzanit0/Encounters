@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:today="clr-namespace:Encounters.Pages.Today;assembly=Encounters"
+             x:Class="Encounters.Pages.Today.TodayPage"
+             x:DataType="today:TodayViewModel">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand" RowSpacing="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="56" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Padding="16, 30, 0, -30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="36" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                       Text="{Binding Greeting}"
+                       FontSize="26"
+                       FontFamily="{StaticResource RegularFont}"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="StartAndExpand" />
+                <Label Grid.Row="1"
+                       Text="{Binding Celebration}"
+                       LineBreakMode="WordWrap"
+                       FontSize="20"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="StartAndExpand" />
+                <Label Grid.Row="2"
+                       Text="{Binding LiturgicalDay}"
+                       LineBreakMode="WordWrap"
+                       FontSize="20"
+                       HorizontalOptions="StartAndExpand"
+                       VerticalOptions="StartAndExpand" />
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

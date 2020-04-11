@@ -7,5 +7,6 @@ namespace Encounters
         public const string LeadPencil = "\U000f064f";
 	    public const string MapMarkerRadius = "\U000f0352";
 	    public const string InformationOutline = "\U000f02fd";
+	    public const string Calendar = "\U000f00ed";
     }
 }
