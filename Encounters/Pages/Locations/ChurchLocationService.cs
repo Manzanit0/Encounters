@@ -11,7 +11,7 @@ namespace Encounters.Pages.Locations
     public class ChurchLocationService
     {
         private static readonly HttpClient Client;
-        private static string TomtomApiToken = "TOMTOM-API-TOKEN-HERE";
+        private static string TomtomApiToken = "Ce4sGapkGP5lkivqyRp6Db3PRAu1qhFJ";
         private static string TomtomApiChurchCategory = "7339002";
 
         static ChurchLocationService()
