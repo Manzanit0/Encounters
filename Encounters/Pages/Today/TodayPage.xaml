@@ -11,16 +11,15 @@
                 <RowDefinition Height="56" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0" Padding="16, 30, 0, -30">
+            <Grid Grid.Row="0" Padding="16, 30, 0, -30" RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="36" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="31" />
+                    <RowDefinition Height="31" />
                 </Grid.RowDefinitions>
                 <Label Grid.Row="0"
                        Text="{Binding Greeting}"
-                       FontSize="26"
-                       FontFamily="{StaticResource RegularFont}"
+                       FontSize="28"
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="StartAndExpand" />
                 <Label Grid.Row="1"

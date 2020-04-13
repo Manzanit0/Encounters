@@ -37,3 +37,5 @@ using Android.App;
 [assembly: UsesFeature("android.hardware.location", Required = false)]
 [assembly: UsesFeature("android.hardware.location.gps", Required = false)]
 [assembly: UsesFeature("android.hardware.location.network", Required = false)]
+// This is order to access the calendar information provided in the Today page
+[assembly: Application(UsesCleartextTraffic =true)]
